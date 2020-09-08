@@ -1,0 +1,34 @@
+package entities;
+
+public class Quarto {
+	private Estudante inquilino;
+	private int numero;
+	
+	public Quarto() {
+		this.inquilino = null;
+		this.numero = 0;
+		
+	}
+
+	public Estudante getInquilino() {
+		return inquilino;
+	}
+
+	public void setInquilino(Estudante inquilino) {
+		this.inquilino = inquilino;
+	}
+
+	public int getNumero() {
+		return numero;
+	}
+
+	public void setNumero(int numero) {
+		this.numero = numero;
+	}
+	public void alugar(int nu, Estudante in) {
+		this.setNumero(nu);
+		this.inquilino.se
+		
+	}
+
+}

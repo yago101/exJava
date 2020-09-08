@@ -1,0 +1,7 @@
+package entities;
+
+public class Quarto {
+	private Estudante inquilino;
+	private int numero;
+
+}

@@ -1,0 +1,18 @@
+package app;
+
+import java.util.Scanner;
+
+public class App {
+
+	public static void main(String[] args) {
+		int nEmployee ;
+		Scanner tc = new Scanner(System.in);
+		
+		System.out.print("How many emplyees will be registered? ");
+		nEmployee = tc.nextInt();
+		
+		
+		tc.close();
+	}
+
+}

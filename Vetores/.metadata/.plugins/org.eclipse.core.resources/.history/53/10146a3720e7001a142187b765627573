@@ -1,0 +1,17 @@
+package app;
+
+import java.util.Scanner;
+
+public class App{
+	public static void main(String[]args) {
+		int qtLocacao = 0;
+		Scanner tc = new Scanner(System.in);
+		
+		System.out.print("How many rooms will be rented? ");
+		qtLocacao = tc.nextInt();
+		
+		int arrayQuartos[] = new int[9];
+		
+		tc.close();
+	}
+}

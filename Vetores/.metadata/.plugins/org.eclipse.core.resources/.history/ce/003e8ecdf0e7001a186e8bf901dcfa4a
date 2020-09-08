@@ -1,0 +1,28 @@
+package app;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class App {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner tc = new Scanner(System.in);
+		
+		int nEmployee ;
+		
+		System.out.print("How many emplyees will be registered? ");
+		nEmployee = tc.nextInt();
+		
+		for(int i = 0 ; i<nEmployee;i++) {
+			System.out.print("Employee #"+(i+1) + " :");
+			System.out.print("Id: ");
+			System.out.print("Name: ");
+			System.out.print("Salary: ");
+			
+		}
+		
+		tc.close();
+	}
+
+}

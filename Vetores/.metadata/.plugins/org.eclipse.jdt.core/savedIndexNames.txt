@@ -1,0 +1,7 @@
+INDEX VERSION 1.131+D:\Udemy\Vetores\.metadata\.plugins\org.eclipse.jdt.core
+3216350908.index
+221421010.index
+878218594.index
+524669843.index
+1513931133.index
+1341913418.index

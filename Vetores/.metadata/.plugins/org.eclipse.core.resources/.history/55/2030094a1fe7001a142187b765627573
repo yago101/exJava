@@ -1,0 +1,27 @@
+package entities;
+
+public class Locacao {
+	private Estudante inquilino;
+	private Quarto quarto;
+	public Estudante getInquilino() {
+		return inquilino;
+	}
+	public void setInquilino(Estudante inquilino) {
+		this.inquilino = inquilino;
+	}
+	public Quarto getQuarto() {
+		return quarto;
+	}
+	public void setQuarto(Quarto quarto) {
+		this.quarto = quarto;
+	}
+	
+	public void alugarQuarto() {
+		this.quarto.setAlugado(true);
+		this.quarto.getNumero();
+		this.inquilino.getEmail();
+		this.inquilino.getNome();
+		this.inquilino.get();
+	}
+
+}

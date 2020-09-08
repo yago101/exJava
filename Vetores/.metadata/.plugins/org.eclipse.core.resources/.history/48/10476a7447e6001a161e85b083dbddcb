@@ -1,0 +1,35 @@
+package app;
+import entities.Produto;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Application {
+	public static void main(String []args) {
+		Locale.setDefault(Locale.US);
+		Scanner tc = new Scanner(System.in);
+		Produto arranjoPdt[]; 
+		int qtdItens;
+		
+		System.out.println("Digite a quantidade de produtos: ");
+		qtdItens = tc.nextInt();
+		arranjoPdt = new Produto[qtdItens];
+		
+		for(int i = 0; i<arranjoPdt.length;i++ ) {
+			System.out.print("Digite o nome do produto: ");
+			tc.nextLine();
+			String n = tc.nextLine();
+			System.out.print("Digite o valor do produto: ");
+			double p = tc.nextDouble();
+			arranjoPdt[i] = new Produto(n, p);
+		}
+		double media = 0;
+		
+		for(int i = 0; i<arranjoPdt.length;i++) {
+			media = (media+arranjoPdt[i].getPreco())/qtdItens;
+		}
+		System.out.printf("AVAREGE PRICE: %.2f",media);
+		tc.close();
+	}
+
+}

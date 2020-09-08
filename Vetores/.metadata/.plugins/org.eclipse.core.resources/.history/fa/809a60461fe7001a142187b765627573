@@ -1,0 +1,36 @@
+package entities;
+
+public class Quarto {
+	private boolean alugado;
+	private int numero;
+	
+	public Quarto() {
+		this.alugado = false;
+		this.numero = 0;
+		
+	}
+
+	
+
+	public boolean isAlugado() {
+		return alugado;
+	}
+
+
+
+	public void setAlugado(boolean alugado) {
+		this.alugado = alugado;
+	}
+
+
+
+	public int getNumero() {
+		return numero;
+	}
+
+	public void setNumero(int numero) {
+		this.numero = numero;
+	}
+	
+
+}

@@ -1,0 +1,13 @@
+package entities;
+
+public class Produto{
+	private String nome;
+	private double preco;
+	
+	private String getNome() {
+		return this.nome;
+	}
+	private void setNome(String n) {
+		this.nome = n;
+	}
+}

@@ -1,0 +1,7 @@
+package entities;
+
+public interface Estoque{
+	public abstract void calcularMedia();
+	public abstract void inserirDados(String n, double p);
+	
+}

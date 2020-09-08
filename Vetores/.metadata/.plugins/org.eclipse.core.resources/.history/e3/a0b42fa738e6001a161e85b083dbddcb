@@ -1,0 +1,19 @@
+package app;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class VetorProdutos{
+	public static void main(String[]args) {
+		Locale.setDefault(Locale.US);
+		Scanner tc = new Scanner(System.in);
+		
+		double precos [];
+		String produtos[];
+		
+		
+		
+		
+		tc.close();
+	}
+}

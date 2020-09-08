@@ -1,0 +1,11 @@
+package app;
+
+import java.util.Locale;
+
+public class Application {
+	public static void main(String []args) {
+		Locale.setDefault(Locale.US);
+		Scanner tc = new Scanner(System.in);
+	}
+
+}

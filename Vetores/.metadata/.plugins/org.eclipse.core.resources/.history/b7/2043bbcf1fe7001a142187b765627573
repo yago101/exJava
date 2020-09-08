@@ -1,0 +1,12 @@
+package app;
+
+import java.util.Scanner;
+
+public class App{
+	public static void main(String[]args) {
+		
+		Scanner tc = new Scanner(System.in);
+		
+		System.out.print("How many rooms will be rented? ");
+	}
+}

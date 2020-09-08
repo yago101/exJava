@@ -1,0 +1,43 @@
+package app;
+
+import java.util.Scanner;
+
+import entities.Estudante;
+
+public class App{
+	public static void main(String[]args) {
+		int qtLocacao = 0,numQuarto;
+		String no,em;
+		
+		
+		Scanner tc = new Scanner(System.in);
+	
+		int arrayQuartos[] = new int[9];
+		Estudante arrayEstudante[];
+		
+		System.out.print("How many rooms will be rented? ");
+		qtLocacao = tc.nextInt();
+		arrayEstudante = new Estudante[qtLocacao];
+		
+		for(int i = 0 ; i< arrayEstudante.length;i++) {
+			System.out.println("\nRent #"+(i+1)+" :");
+			System.out.print("Name: ");
+			tc.nextLine();
+			no = tc.nextLine();
+			
+			System.out.print("eMAIL: ");
+			em = tc.nextLine();
+			System.out.print("Room: ");
+			numQuarto = tc.nextInt();
+			
+		Estudante e = new Estudante(no,em);
+			arrayQuartos[numQuarto] = e.getQuarto(); 
+		}
+		System.out.println("Busy roms: ");
+		for(int i = 0 ; i<arrayEstudante.length;i++) {
+		System.out.println(arrayEstudante[i]);
+		}
+		
+		tc.close();
+	}
+}

@@ -1,0 +1,23 @@
+package app;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class VetorProdutos{
+	public static void main(String[]args) {
+		Locale.setDefault(Locale.US);
+		Scanner tc = new Scanner(System.in);
+		
+		//declarando arrays e as demais variaveis
+		double precos [];
+		String produtos[];
+		
+		//entrada de dados
+		System.out.println("Por favor, digite a quantidade de produtos: ");
+		
+		
+		
+		
+		tc.close();
+	}
+}

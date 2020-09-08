@@ -1,0 +1,9 @@
+package entities;
+
+public class Locacao {
+	private Estudante inquilino;
+	private Quarto quarto;
+	
+	
+
+}
