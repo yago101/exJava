@@ -9,18 +9,18 @@ public class Worker{
 	private String name;
 	private WorkerLevel level;
 	private Double baseSalary;
-	private Departament departament;
+	//private Departament departament;
 	private List<HourContract> contracts = new ArrayList<>();
 	
 	public Worker() {
 		
 	}
 	
-	public Worker(String name, WorkerLevel level, Double baseSalary, Departament departament) {
+	public Worker(String name, WorkerLevel level, Double baseSalary) {
 		this.name = name;
 		this.level = level;
 		this.baseSalary = baseSalary;
-		this.departament = departament;
+		//this.departament = departament;
 	}
 
 
@@ -66,8 +66,16 @@ public class Worker{
 	public void removeContract(HourContract contract) {
 		this.contracts.remove(contract);
 	}
-	public double income(Integer year,Integer month) {
+	public double income(int year,int month) {
 		
+		return 0.00;
+		
+	}
+
+	@Override
+	public String toString() {
+		return "Worker [name=" + name + ", level=" + level + ", baseSalary=" + baseSalary + ", contracts=" + contracts
+				+ "]";
 	}
 	
 }
