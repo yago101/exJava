@@ -9,10 +9,9 @@ public class OrderItem {
 	public OrderItem() {
 		
 	}
-	public OrderItem(int quantity, double price, Product product) {
+	public OrderItem(int quantity, Product product) {
 		
 		this.quantity = quantity;
-		this.price = price;
 		this.product = product;
 	}
 	public int getQuantity() {
@@ -25,7 +24,7 @@ public class OrderItem {
 		return price;
 	}
 	public void setPrice(double price) {
-		this.price = price;
+		this.price = this.subTotal();
 	}
 	public Product getProduct() {
 		return product;
@@ -39,10 +38,10 @@ public class OrderItem {
 	}
 	public String toString() {
 		StringBuilder sb = new StringBuilder();
-		sb.append(this.product.getNmae()+", ");
+		sb.append(this.product.getName()+", $");
 		sb.append(this.product.getPrice()+ ", ");
 		sb.append("Quantity: " + this.quantity);
-		sb.append("SubTotal: "+ subTotal());
+		sb.append(" SubTotal: $"+  subTotal());
 		return sb.toString()+"\n";
 	}
 }

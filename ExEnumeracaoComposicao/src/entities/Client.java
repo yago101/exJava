@@ -1,5 +1,7 @@
 package entities;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Client {
@@ -9,11 +11,13 @@ public class Client {
 	private Date birthDate;
 	
 	
-	public Client(String name, String email, Date birthDate) {
+	
+	public Client(String name, String email, String birthDate) throws ParseException {
 		
 		this.name = name;
 		this.email = email;
-		this.birthDate = birthDate;
+		SimpleDateFormat sdfBirthDate = new SimpleDateFormat("dd/MM/yyy");
+		this.birthDate = sdfBirthDate.parse(birthDate);
 	}
 
 

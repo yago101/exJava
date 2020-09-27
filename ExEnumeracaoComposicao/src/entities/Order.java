@@ -18,28 +18,44 @@ public class Order {
 	private ArrayList<OrderItem> item = new ArrayList<OrderItem>();
 	
 	
-	public Order(Date moment, OrderStatus status, ArrayList<OrderItem> item) {
+	
+	
+	public Order(Date moment, OrderStatus status, Client client) {
 		
 		this.moment = moment;
 		this.status = status;
-		this.item = item;
+		this.client = client;
 	}
+	
 	public Date getMoment() {
 		return moment;
 	}
+
 	public void setMoment(Date moment) {
 		this.moment = moment;
 	}
+
 	public OrderStatus getStatus() {
 		return status;
 	}
+
 	public void setStatus(OrderStatus status) {
 		this.status = status;
 	}
+
+	public Client getClient() {
+		return client;
+	}
+
+	public void setClient(Client client) {
+		this.client = client;
+	}
+
 	public ArrayList<OrderItem> getItem() {
 		return item;
 	}
-	
+
+
 	public void addItem(OrderItem item) {
 		this.item.add(item);
 	}
@@ -57,14 +73,15 @@ public class Order {
 		StringBuilder sb = new StringBuilder();
 		sb.append("ORDER SUMMARY:\n");
 		sb.append("Order moment: " + sdfOrder.format(this.moment));
-		sb.append("Order Status: " + this.getStatus());
-		sb.append("Client: " + this.client.getName());
+		sb.append("\nOrder status: " + this.getStatus());
+		sb.append("\nClient: " + this.client.getName());
 		sb.append(" (" +sdfClientBirthDay.format(this.client.getBirthDate())+") - " + this.client.getEmail());
-		sb.append("Order Items:\n" );
+		sb.append("\nOrder Items:\n" );
 		for(OrderItem its: this.item) {
-			its.toString();
+			sb.append(its.toString());
 		}
-		sb.append("Total price: "+total());
+		sb.append("Total price: $"+ total());
+		return sb.toString();
 	}
 	
 
