@@ -12,6 +12,7 @@ import entities.enums.StatusPedido;
 de um pedido dentro de um processo de venda e envio.
 */
 
+
 	public class Program{
 		
 		public static void main (String []args) {
@@ -21,7 +22,9 @@ de um pedido dentro de um processo de venda e envio.
 			
 			//criando um pedido
 			Pedido pd1 = new Pedido(2,sdf.format(data.getTime()), StatusPedido.AGUARDANDO_PAGAMENTO);
-			
+			/*usando o valor do statusPedido
+			StatusPedido statusPedido = StatusPedido.ValueOf(teclado.next());
+			*/
 			//saída
 			System.out.println(pd1);
 		}
