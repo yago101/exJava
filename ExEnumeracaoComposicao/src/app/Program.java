@@ -32,11 +32,11 @@ public class Program {
 		
 		System.out.println("Enter order data: ");
 		System.out.print("Status: ");
-		String status = sc.next();
+		OrderStatus status = OrderStatus.valueOf( sc.next());
 		System.out.print("How many items to this order? ");
 		int nItemsOrder = sc.nextInt();
 		sc.nextLine();
-		Order or = new Order(new Date(),OrderStatus.PROCESSING, cl);
+		Order or = new Order(new Date(),status, cl);
 		for(int i = 0; i<nItemsOrder;i++) {
 			System.out.println("Enter #"+(i+1)+" item data: ");
 			System.out.print("Product name: ");
@@ -52,7 +52,7 @@ public class Program {
 			or.addItem(ordItem);
 			
 		}
-		System.out.println("\n"+or.toString());
+		System.out.println("\n"+or);
 		
 		sc.close();
 		

@@ -51,11 +51,7 @@ public class Order {
 		this.client = client;
 	}
 
-	public ArrayList<OrderItem> getItem() {
-		return item;
-	}
-
-
+	
 	public void addItem(OrderItem item) {
 		this.item.add(item);
 	}

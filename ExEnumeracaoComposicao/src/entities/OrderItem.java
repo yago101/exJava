@@ -41,7 +41,7 @@ public class OrderItem {
 		sb.append(this.product.getName()+", $");
 		sb.append(this.product.getPrice()+ ", ");
 		sb.append("Quantity: " + this.quantity);
-		sb.append(" SubTotal: $"+  subTotal());
+		sb.append(" SubTotal: $"+  String.format("%.2f",subTotal()));
 		return sb.toString()+"\n";
 	}
 }
